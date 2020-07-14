@@ -6,14 +6,15 @@
 |password|string|null: false|
 |name|string|null: false|
 ### Association
-- has_many :groups
-- has_many :message
+- has_many :groups_users
+- has_many :groups, through: :groups_users
+- has_many :messages
 
 ## messageテーブル
 |Column|Type|Options|
 |:-----|:---|:------|
-|body|text|null: false|
-|image|string|null: false|
+|body|text|
+|image|string|
 |group_id|integer|null: false, foreign_key: true|
 |user_id|integer|null: false, foreign_key: true|
 ### Association
@@ -23,11 +24,11 @@
 ## groupsテーブル
 |Column|Type|Options|
 |:-----|:---|:------|
-|user_id|integer|null: false, foreign_key: true|
-|message_id|integer|null: false, foreign_key: true|
+|name|string|null: false|
 ### Association
-- has_many :user
-- has_many :message
+- has_many :groups_users
+- has_many :users, through: :groups_users
+- has_many :messages
 
 ## groups_usersテーブル
 |Column|Type|Options|
