@@ -1,0 +1,46 @@
+.ChatMain
+  .ChatMain__GroupInfo
+    .ChatMain__GroupList
+      .ChatMain__GroupName skG
+      %ul.ChatMain__MemberList
+        Member :
+        %li.ChatMain__MemberName
+          sk
+    = link_to '#',class: "ChatMain__Edit" do
+      Edit   
+  .ChatMain__MessageList
+    .MessageList
+      .MessageHead
+        .MessageHead__UserName
+          sk
+        .MessageHead__Date
+          2019/11/20(Wed) 17:43:01
+      .Message
+        %p.Message__Content
+          おはよう！
+    .MessageList
+      .MessageHead
+        .MessageHead__UserName
+          sk
+        .MessageHead__Date
+          2019/11/20(Wed) 17:43:34
+      .Message
+        %p.Message__Content
+          今日は夜から雨
+      .MessageList
+      .MessageHead
+        .MessageHead__UserName
+          sk
+        .MessageHead__Date
+          2020/7/17(Fri) 20:12:00
+      .Message
+        %p.Message__Content
+          明日は朝から雷
+  .ChatMain__MessageForm
+    %form.Form
+      .Form__Contents
+        %input.Form__InputContent{type: 'text', placeholder: 'type a message'}
+        %label.Form__InputImage
+          = icon('far', 'image', class: 'Form__icon')
+          %input.Hidden{type: 'file'}
+      %input.Form__Submit{type: 'submit', value: 'Send'}
