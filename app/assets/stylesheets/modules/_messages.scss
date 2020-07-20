@@ -9,6 +9,7 @@
 
 .SideBar {
   width: 300px;
+  color: #ffffff;
   &__UserName {
     height: 100px;
     display: flex;
@@ -18,7 +19,6 @@
   &__GroupList {
     height: calc(100vh - 100px);
     background-color: #2f3e51;
-    color: #ffffff;
   }
 }
 
@@ -32,7 +32,6 @@
   &__Name {
     font-size: 16px;
     font-weight: bold;
-    color: #ffffff;
   }
   &__IconList {
     display: flex;
