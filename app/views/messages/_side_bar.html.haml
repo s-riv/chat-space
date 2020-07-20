@@ -1,14 +1,13 @@
 .SideBar
   .SideBar__UserName
     .TopItems
-      %p.TopItems__Name
-        = current_user.name
+      %p.TopItems__Name sk
       %ul.TopItems__IconList
         %li.TopItems__Icons
           = link_to '#' do
             = icon('far', 'edit')
         %li.TopItems__Icons
-          = link_to edit_user_path(current_user) do
+          = link_to '#' do
             = icon('fas', 'cog')
   .SideBar__GroupList
     .GroupItems
