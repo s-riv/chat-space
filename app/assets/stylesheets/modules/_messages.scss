@@ -94,6 +94,7 @@ a {
     height: calc(100vh - 190px);
     background-color: #fafafa;
     padding: 35px 0px 0px 40px;
+    overflow: scroll;
   }
   &__MessageForm{
     height: 90px;
