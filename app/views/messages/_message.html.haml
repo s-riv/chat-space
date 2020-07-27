@@ -1,4 +1,4 @@
-.MessageList
+.MessageList{data: {message: {id: message.id}}}
   .MessageHead
     .MessageHead__UserName
       = message.user.name
@@ -9,3 +9,4 @@
       %p.Message__Content
         = message.content
     = image_tag message.image.url, class: 'Message__Image' if message.image.present?
+  	
