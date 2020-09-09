@@ -6,7 +6,6 @@ http://54.95.59.51/
 
 # 概要
 テックキャンプ応用カリキュラムにて、チャットアプリケーションの実装をデプロイまで行いました。
-IPアドレス：54.95.59.51
 
 # DEMO
 ![chat-space](https://user-images.githubusercontent.com/68064826/92599054-abfa6300-f2e4-11ea-8da2-9db41e406797.gif)
